@@ -4,30 +4,113 @@ body {
 
 h1 {
 	font-family: Tahoma, bold;
-	font-size: ;
-	position: center;
+	text-align: center;
+	font-size: 50px;
 }
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 #cash {
-	display: inline-block;
-	position: center;
+	right: 250px;
 }
 
-.quarter{
-	size: ;
+img {
+	height: 100px;
+	width: 100px;
 }
 
 #timeline {
 	position: center;
 	font-family: Helvetica, bold;
-	font-size: ;
+	font-size: 30px;
+	text-align: center;
+}
+
+#year1 {
+	color: red;
+}
+
+#year2 {
+	color: orange;
+}
+
+#year3 {
+	color: yellow;
+}
+
+#year4 {
+	color: #2eddc0;
+}
+
+#year5 {
+	color: #24e231;
+}
+
+#year6 {
+	color: #18c4db;
+}
+
+#year7 {
+	color: blue;
+}
+
+#year8 {
+	color: #a51dd6;
+}
+
+#year9 {
+	color: #731ab2;
+}
+
+#year10 {
+	color: magenta;
 }
 
 #states {
-	font-family: Helvetica
-	font-size: ;
+	font-family: Helvetica;
+	font-size: 35px;
+	text-align: center;
+}
+
+.year1:hover {
+	color: red;
+}
+
+.year2:hover {
+	color: orange;
+}
+
+.year3:hover {
+	color: yellow;
+}
+
+.year4:hover {
+	color: #2eddc0;
+}
+
+.year5:hover {
+	color: #24e231;
+}
+
+.year6:hover {
+	color: #18c4db;
+}
+
+.year7:hover {
+	color: blue;
+}
+
+.year8:hover {
+	color: #a51dd6;
+}
+
+.year9:hover {
+	color: #731ab2;
+}
+
+.year10:hover {
+	color: magenta;
 }
