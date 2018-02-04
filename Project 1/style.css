@@ -8,18 +8,26 @@ h1 {
 	position: center;
 }
 
+a {
+	text-decoration: none;
+}
+
 #cash {
-
-}
-
-.quarter{
-
-}
-
-#timeline-nav {
+	display: inline-block;
 	position: center;
 }
 
+.quarter{
+	size: ;
+}
+
+#timeline {
+	position: center;
+	font-family: Helvetica, bold;
+	font-size: ;
+}
+
 #states {
-	
+	font-family: Helvetica
+	font-size: ;
 }
