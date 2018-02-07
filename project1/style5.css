@@ -10,7 +10,7 @@ h1 {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #2eddc0;
 }
 
 #cash {
@@ -27,7 +27,7 @@ img {
 #timeline {
 	position: absolute;
 	top: 250px;
-	left: 250px;
+	left: 675px;
 	font-family: Helvetica, bold;
 	font-size: 30px;
 	text-align: center;
@@ -76,6 +76,7 @@ img {
 #states {
 	position: absolute;
 	top: 350px;
+	left: 200px;
 	font-family: Helvetica;
 	font-size: 35px;
 	text-align: center;
