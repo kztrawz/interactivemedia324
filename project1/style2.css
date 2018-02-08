@@ -16,7 +16,7 @@ h1 {
 #cash {
 	position: absolute;
 	top: 125px;
-	left: 275px;
+	left: 525px;
 }
 
 img {
@@ -27,7 +27,7 @@ img {
 #timeline {
 	position: absolute;
 	top: 250px;
-	left: 675px;
+	left: 900px;
 	font-family: Helvetica, bold;
 	font-size: 30px;
 	text-align: center;

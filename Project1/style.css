@@ -16,7 +16,7 @@ a {
 #cash {
 	position: absolute;
 	top: 125px;
-	left: 275px;
+	left: 525px;
 }
 
 img {
@@ -27,7 +27,7 @@ img {
 #timeline {
 	position: absolute;
 	top: 250px;
-	left: 250px;
+	left: 450px;
 	font-family: Helvetica, bold;
 	font-size: 30px;
 	text-align: center;
