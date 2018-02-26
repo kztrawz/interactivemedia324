@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YOU DIED</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" media="screen"/>
+    </head>
+    
+    <body>
+        <div class="videoPlayer">
+            <iframe id="my_video_player" width="1120" height="630" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <br>
+        
+        <div class="buttons">
+            <div id="continue">
+                <a href="https://elissaeren.github.io/interactivemedia324/project2/">
+                continue
+                </a>
+            </div>
+            
+            <br>
+        
+            <div id="quit">
+                quit
+            </div>
+            
+            <br>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+        <script type="text/javascript"> 
+            var video = new Array(); //this contains all the video links the generator will cycle through
+            
+                video[0] = "http://www.youtube.com/embed/95YphPu33kI?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=95YphPu33kI"; 
+                    // Nathan Drake: https://www.youtube.com/watch?v=95YphPu33kI
+            
+                video[1] = "http://www.youtube.com/embed/zTHhwvTJyMU?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=zTHhwvTJyMU";
+                    // Super Mario Bros: https://www.youtube.com/watch?v=zTHhwvTJyMU
+            
+                video[2] = "http://www.youtube.com/embed/6S21ZSsC21U?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=6S21ZSsC21U";
+                    // Undertale : https://www.youtube.com/watch?v=6S21ZSsC21U
+            
+                video[3] = "http://www.youtube.com/embed/m9hhDyuC5uE?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=m9hhDyuC5uE";
+                    // Street Fighter I : https://www.youtube.com/watch?v=m9hhDyuC5uE  
+            
+                video[4] = "http://www.youtube.com/embed/BrIA5TrZEwI?&autoplay=1&rel=0&fs=0&loop=1&start=16&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=BrIA5TrZEwI";
+                    // Cuphead [death compilation] : https://www.youtube.com/watch?v=BrIA5TrZEwI
+            
+                video[5] = "http://www.youtube.com/embed/0HXVtN91TcU?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=0HXVtN91TcU";
+                    // Breath of the Wild : https://www.youtube.com/watch?v=0HXVtN91TcU 
+            
+                video[6] = "http://www.youtube.com/embed/INWeeTHkWBo?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=INWeeTHkWBo";
+                    // Grand Theft Auto 5 : https://www.youtube.com/watch?v=INWeeTHkWBo 
+            
+                video[7] = "http://www.youtube.com/embed/UCnHT8IFWSc?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=UCnHT8IFWSc";
+                    // Street Fighter Alpha 2 : https://www.youtube.com/watch?v=UCnHT8IFWSc 
+            
+                video[8] = "http://www.youtube.com/embed/jXfJJ_6E-_I?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=jXfJJ_6E-_I";
+                    // Street Fighter II Turbo : https://www.youtube.com/watch?v=jXfJJ_6E-_I 
+            
+                video[9] = "http://www.youtube.com/embed/zhg5EsWGzoY?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=zhg5EsWGzoY";
+                    // Five Nights At Freddy's 2 : https://www.youtube.com/watch?v=zhg5EsWGzoY 
+            
+                video[10] = "http://www.youtube.com/embed/5sTDlMOs2E4?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=5sTDlMOs2E4";
+                    // One Night At Flumpty's 2 : https://www.youtube.com/watch?v=5sTDlMOs2E4 
+            
+                video[11] = "http://www.youtube.com/embed/_629h9f156k?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=_629h9f156k";
+                    // Five Nights At The Krusty Krab : https://www.youtube.com/watch?v=_629h9f156k 
+            
+                video[12] = "http://www.youtube.com/embed/jtI_1SJMCb8?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=jtI_1SJMCb8";
+                    // Bloodbourne : https://www.youtube.com/watch?v=jtI_1SJMCb8 
+            
+                video[13] = "http://www.youtube.com/embed/2BW7-Odg9Ew?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=2BW7-Odg9Ew";
+                    // Bloodbourne : https://www.youtube.com/watch?v=2BW7-Odg9Ew 
+            
+                video[14] = "http://www.youtube.com/embed/OlnvIR_CYCE?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=OlnvIR_CYCE";
+                    // Undertale : https://www.youtube.com/watch?v=OlnvIR_CYCE 
+            
+                video[15] = "http://www.youtube.com/embed/b8gUpUah59E?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=b8gUpUah59E";
+                    // Super Mario Sunshine : https://www.youtube.com/watch?v=b8gUpUah59E 
+            
+                video[16] = "http://www.youtube.com/embed/wJLp5vCxgtI?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=wJLp5vCxgtI";
+                    // Paper Mario : https://www.youtube.com/watch?v=wJLp5vCxgtI 
+            
+                video[17] = "http://www.youtube.com/embed/t8rMk4Qg75Y?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=t8rMk4Qg75Y";
+                    // Super Mario World NES : https://www.youtube.com/watch?v=t8rMk4Qg75Y 
+            
+                video[18] = "http://www.youtube.com/embed/Zb0n_jIz5po?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=Zb0n_jIz5po";
+                    // Super Mario Bros, Classic : https://www.youtube.com/watch?v=Zb0n_jIz5po 
+            
+                video[19] = "http://www.youtube.com/embed/G54WjcBQNyg?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=G54WjcBQNyg";
+                    // Super Mario Bros NES : https://www.youtube.com/watch?v=G54WjcBQNyg 
+            
+                video[20] = "http://www.youtube.com/embed/SPDBLMPbCZ4?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=SPDBLMPbCZ4";
+                    // Pooyan, Arcade : https://www.youtube.com/watch?v=SPDBLMPbCZ4
+            
+                video[21] = "http://www.youtube.com/embed/mYrm5FtaUrg?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=mYrm5FtaUrg";
+                    // Mr. Do!, Arcade : https://www.youtube.com/watch?v=mYrm5FtaUrg
+            
+                video[22] = "http://www.youtube.com/embed/dqhXGIzrbk0?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=dqhXGIzrbk0";
+                    // Legendary Wings, Arcade : https://www.youtube.com/watch?v=dqhXGIzrbk0
+            
+                video[23] = "http://www.youtube.com/embed/H0Q0bQ7d3GA?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=H0Q0bQ7d3GA";
+                    // Gradius NES : https://www.youtube.com/watch?v=H0Q0bQ7d3GA
+            
+                video[24] = "http://www.youtube.com/embed/5ky1exGKAQs?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=5ky1exGKAQs";
+                    // Dig Dug, Arcade : https://www.youtube.com/watch?v=5ky1exGKAQs
+            
+                video[25] = "http://www.youtube.com/embed/JIwXDlVVhFg?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=JIwXDlVVhFg";
+                    // Star Force NES : https://www.youtube.com/watch?v=JIwXDlVVhFg
+            
+                video[26] = "http://www.youtube.com/embed/87k6qQFbG1U?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=87k6qQFbG1U";
+                    // Circus Charlie, Arcade : https://www.youtube.com/watch?v=87k6qQFbG1U
+            
+                video[27] = "http://www.youtube.com/embed/EXmtzPnuKSc?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=EXmtzPnuKSc";
+                    // Crash Bandicoot 3 : https://www.youtube.com/watch?v=EXmtzPnuKSc
+            
+                video[28] = "http://www.youtube.com/embed/V_WQdyh4KsU?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=V_WQdyh4KsU";
+                    // Sonic CD : https://www.youtube.com/watch?v=V_WQdyh4KsU
+            
+                video[29] = "http://www.youtube.com/embed/-0KgQbQzZv0?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=-0KgQbQzZv0";
+                    // Pac Man, NES : https://www.youtube.com/watch?v=-0KgQbQzZv0
+            
+                video[30] = "http://www.youtube.com/embed/QHQ5Kfm-UX0?&autoplay=1&rel=0&fs=0&loop=1&showinfo=0&disablekb=1&modestbranding=1&controls=0&hd=1&autohide=1&color=white&playlist=QHQ5Kfm-UX0";
+                    // Metroid Fusion : https://www.youtube.com/watch?v=QHQ5Kfm-UX0
+
+            var maxVideo = video.length - 1;
+            
+            $('#quit').click(function(){
+                var selection = Math.round(Math.random() * maxVideo);
+                document.getElementById("my_video_player").src = video[selection];
+            });
+        </script>
+    </body>
