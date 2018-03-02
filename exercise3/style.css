@@ -1,0 +1,16 @@
+body, html {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	margin: 0;
+}
+
+.text, a {
+	z-index: 100;
+	color: ;
+	font-size: 50px;
+	fo
+}
