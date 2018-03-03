@@ -1,0 +1,34 @@
+body, html {
+	background-image: url(http://kztrawz.github.io/interactivemedia324/exercise3/images/pool.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0;
+}
+
+.text, a {
+	z-index: 100;
+	color: #14e5d0;
+	font-size: 50px;
+	font-family: Verdana, sans-serif;
+	text-decoration: none;
+	position: absolute;
+	top: 200px;
+	left: 50px;
+	width: 100%;
+	margin: 0 auto;
+	width: 300px;
+	height: 300px;
+}
+
+a:hover {
+	color: #dbd087;
+}
+
+.image {
+	position: relative;
+	width: 1200px;
+	padding-top: 0%;
+	padding-bottom: 20%;
+}
