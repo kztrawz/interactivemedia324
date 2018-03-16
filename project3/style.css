@@ -8,3 +8,25 @@
 	min-height: 100%
 }
 
+body {
+	overflow: hidden;
+}
+
+.image {
+	position: absolute;
+	width: auto;
+	height: auto;
+	z-index: 5;
+	pointer-events: none;
+	display: none;
+	animation: blur 2s 1;
+}
+
+@keyframes blur {
+	0% {
+		filter: blur(30px);
+	}
+	100%{
+		filter: blur(0px);
+	}
+}
