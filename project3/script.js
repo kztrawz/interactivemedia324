@@ -1,7 +1,4 @@
-var images1 = "http://kztrawz.github.io/interactivemedia324/project3/images/water.jpg"
-var images2 = "http://kztrawz.github.io/interactivemedia324/project3/images/pool.jpg"
-var images3 = "http://kztrawz.github.io/interactivemedia324/project3/images/ocean.jpg"
-var images4 = "http://kztrawz.github.io/interactivemedia324/project3/images/waves.jpg"
+var images = ["water.jpg", "pool.jpg", "ocean.jpg", "waves.jpg"]
 
 
 $('video').click(function() {
@@ -9,7 +6,7 @@ $('video').click(function() {
 });
 
 function findGallery() {
-	var x = Math.floor(Math.random() * 4) + 1;
+	var x = Math.floor(Math.random() * images.length * 4) + 1;
 
 	switch (x) {
 		case 1:
