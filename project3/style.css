@@ -12,13 +12,15 @@ body {
 	overflow: hidden;
 }
 
-.image {
+img {
 	position: absolute;
 	width: auto;
 	height: auto;
 	z-index: 5;
 	pointer-events: none;
-	display: none;
+	display: block;
+	left: 600px;
+	top: 350px;
 	animation: blur 2s 1;
 }
 
@@ -30,3 +32,12 @@ body {
 		filter: blur(0px);
 	}
 }
+
+/*button {
+	font-size: 15px;
+	background-color: lightblue;
+	border-radius: 5px;
+	padding: 10px;
+	color: navy;
+	font-family: "Ariel Black", Gadget, sans-serif;
+} */
