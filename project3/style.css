@@ -14,12 +14,12 @@ body {
 
 img {
 	position: absolute;
-	width: auto;
-	height: auto;
+	width: 300px;
+	height: 300px;
 	z-index: 5;
 	pointer-events: none;
 	display: block;
-	left: 600px;
+	left: 550px;
 	top: 350px;
 	animation: blur 2s 1;
 }
